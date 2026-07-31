@@ -11,13 +11,14 @@ const f3 = () => {
 };
 
 function main() {
-  console.log("main");
-  // setTimeout(f1, 1000);
-  setInterval(f1,1000);
+  console.log("main ");
+  setTimeout(f1, 0);
+  //setInterval(f1,1000);
   setImmediate(f2);
   
   f3();
   console.log("end");
 }
+
 
 main();
