@@ -29,13 +29,33 @@ const showCart = async () => {
   const data = await getCart();
   console.table(data);
   let total = 0;
-  for(let i=0;i<data.length;i++)
-  {
-    total=total+data[i].qty*data[i].price;
+  
+  total=data.reduce((t,item) => t + item.qty * item.price,0)
+  //for(let i=0;i<data.length;i++)
+  //{
+    //total=total+data[i].qty*data[i].price;
 
-  }
+  //}
   console.log("Total price Rs.:",total);
 };
+
+const removeFromCart = async (pid) => {
+  const data = await getCart();
+
+  const count = data.length;
+
+  const newData = data.filter((item) => item.id !== pid);
+
+  const newCount = newData.length;
+
+  if (count === newCount) {
+    console.log(`Product with id ${Pid} not found`);
+  } else {
+    await saveCart(newData);
+    console.log(`Product with id ${Pid} deleted Successfully`);
+  }
+};
+
 
 const main = async () => {
   let choice;
