@@ -4,10 +4,13 @@
   "description": "It is build in Node.js module which allows developers to create web server and web  client without installing any external package.\r one of the most important module in Node.js ,originally designed for building scalable network application and web servers.",
   "main": "prg1.js",
   "scripts": {
-   "start": "node prg3.js"
+    "start": "node prg3.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
 }
