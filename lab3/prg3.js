@@ -1,9 +1,9 @@
-import http from "http";
+import http from 'http';
 
 const server = http.createServer((req, res) => {
+  res.writeHead(200,{"content-type":"text/html"});
+  res.end("<h2>Hello Client</h2>");
   console.log("Server hit by client");
-  res.write("<h1>Hello Client </h1>");
-  res.end();
 });
 
 server.listen(4444, () => {
