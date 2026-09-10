@@ -16,3 +16,11 @@ script{
 
 7. add node_modules to .gitignore
 8. to run use `npm run dev`
+
+## REST API
+-majorly backend server retuns only data not html file
+-REST API use(get,post,put,pstch,delete) ,method to communicate with client
+-any browser can check only get method
+-for other method type we use third party API Tester like postman,thunder,client,echo,api etc
+
+EchoAPI for VS Code
