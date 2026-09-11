@@ -4,14 +4,14 @@
   "description": "",
   "main": "prg7.js",
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js"
+    "start": "node prg7.js",
+    "dev": "nodemon prg7.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
   "devDependencies": {
-    "nodemon": "^3.1.14"
+  "nodemon": "^3.1.14"
   }
 }
